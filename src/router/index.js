@@ -1,21 +1,46 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
-import home from '../views/home.vue'
-Vue.use(VueRouter)
+import Router from 'vue-router'
 
-const routes = [
- {
-   path: '/home', 
-   name:'Home',
-   component:home,
- }
-]
+import Home from '@/views/Home/Hm'
+import Jiuguan from '@/views/Jiuguan/Jg'
+import Gonglue from '@/views/Gonglue/Gl'
+import Guanceshu from '@/views/Guanceshu/Gcs'
+import Guanfang from '@/views/Guanfang/Gf'
+import Tongrentu from '@/views/Tongrentu/Trt'
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+Vue.use(Router);
 
-export default router
+export default new Router({
+  routes: [
+    {
+      path: "/hm",
+      name: "Home",
+      component: Home
+    },
+    {
+      path: '/jg',
+      name: 'Jiuguan',
+      component: Jiuguan,
+    },
+    {
+      path: '/gl',
+      name: 'Gonglue',
+      component: Gonglue,
+    },
+    {
+      path: '/gf',
+      name: 'Guanfang',
+      component: Guanfang,
+    },
+    {
+      path: '/gcs',
+      name: 'Guanceshu',
+      component: Guanceshu,
+    },
+    {
+      path: '/trt',
+      name: 'Tongrentu',
+      component: Tongrentu,
+    }
+  ],
+});
