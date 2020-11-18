@@ -1,5 +1,10 @@
 # 原神社区
 
+## 引入ElementUI
+```
+cnpm i  --save  element-ui
+```
+
 ## Project setup
 ```
 npm install
