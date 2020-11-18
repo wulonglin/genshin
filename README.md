@@ -1,6 +1,6 @@
 # 原神社区
 
-## 引入ElementUI
+## Import ElementUI
 ```
 cnpm i  --save  element-ui
 ```
