@@ -1,9 +1,18 @@
 <template>
-  <div id="home">
+  <div>
+    <header-view></header-view>
     <h1>首页</h1>
+    <footer-view></footer-view>
   </div>
 </template>
 
-<script></script>
-
-<style lang="" scoped></style>
+<script>
+import headerView from "@/views/header";
+import footerView from "@/views/footer";
+export default {
+  components: {
+    headerView,
+    footerView,
+  },
+};
+</script>
